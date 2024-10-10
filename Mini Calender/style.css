@@ -1,0 +1,53 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+.container{
+  background-color: rgb(71, 77, 68);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.calender{
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.right{
+  border-radius: 0px 20px 0px 0px;
+  background-color: rgb(174, 194, 144);
+  width: 58%;
+}
+.left{
+  border-radius: 20px 0px 0px 0px;
+  background-color: rgb(251, 255, 246);
+  width: 42%;
+}
+.right,.left{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 5px;
+  padding: 30px 20px;
+  height: 250px;
+  text-align: center;
+}
+
+#date,#year{
+  /* margin-top: 10px; */
+  font-size: 4rem;
+  color: rgb(23, 94, 70);
+}
+#day,#month{
+  /* padding-top: 20px; */
+  font-size: 2rem;
+  text-transform: capitalize;
+  color: rgb(27, 82, 42);
+  font-weight: 600;
+}

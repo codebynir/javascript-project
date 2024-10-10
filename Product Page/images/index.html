@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <!-- Left -->
+      <div class="left">
+        <img src="" alt="" id="img" height="450px" width="350px"/>
+        <div class="change-img">
+          <button onClick="changeImg()" id="changeImg1">front</button>
+          <button onClick="changeImg()" id="changeImg2">Back</button>
+          <button onClick="changeImg()" id="changeImg3">Full</button>
+        </div>
+      </div>
+      <!-- right  -->
+      <div class="right">
+        <div class="text">
+          <h1>Casual T-Shirt</h1>
+          <h2>$<span id="price">15</span></h2>
+          <h3 style="color: rgb(38, 210, 38);">30% Off</h3>
+          <p>
+            Comfortable, stylish tee with a soft cotton blend, perfect for
+            casual wear. Available in various colors and sizes
+          </p>
+        </div>
+        <div class="btns">
+          <table>
+            <tr>
+              <td>Size</td>
+              <td>
+                <button class="size" id="s">S</button>
+                <button class="size" id="m">M</button>
+                <button class="size" id="l">L</button>
+                <button class="size" id="xl">XL</button>
+                <button class="size" id="xxl">XXL</button>
+              </td>
+              
+            </tr>
+            <tr>
+              <td>Color</td>
+              <td>
+                <button onClick="changeImageByColor(white)" class="circle" id="colorWhite" style="background-color: white;"></button>
+                <button onClick="changeImageByColor(red)" class="circle" id="colorRed" style="background-color: red;"></button>
+                <button onClick="changeImageByColor(green)" class="circle" id="colorGreen" style="background-color: green;"></button>
+                <button onClick="changeImageByColor(blue)" class="circle" id="colorBlue" style="background-color: blue;"></button>
+                
+                <button onClick="changeImageByColor(black)" class="circle" id="colorBlack" style="background-color: black;"></button>
+              </td>
+            </tr>
+              
+              
+           
+            <tr>
+              <td>Quantity</td>
+              <td>
+                <button onClick="inc()"  class="plus" id="inc">+<button/><input type="button" value="0" class="btn-text" id="inp"><button onClick="dec()"  class="minus" id="dec">-<button/>
+              </td>
+            </tr>
+          </table>
+        </div>
+        <button onClick="buyNow()" id="buyNow" class="buyNow">Buy now</button>
+      </div>
+    </div>
+
+    <!-- hidden bill elemend -->
+     <div class="bill" style="display: none;" id="bill">
+      <h1>Total Cost : </h1>
+      <div id="cost">0</div>
+      <h2 class="thanks">Thanks for Shopping</h2>
+     </div>
+    <!-- JS Linked -->
+    <script src="script.js"></script>
+  </body>
+</html>

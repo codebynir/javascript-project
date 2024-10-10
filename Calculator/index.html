@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="color-mode">
+        <button onclick="mode()" id="text">Dark</button>   
+    </div>
+    <div class="calculator" id="calc">
+        <div id="display" class="display"></div>
+        <div class="buttons">
+            <button onClick="clearDisplay()" id="clearDisplay">C</button>
+            <button onClick="deleteLast()" id="deleteLast">DEL</button>
+            <button onclick="display.textContent=eval(display.textContent)">=</button>
+            <button onclick="display.textContent+='.'">.</button>
+            <button onclick="appendCharacter('7')">7</button>
+            <button onclick="appendCharacter('8')">8</button>
+            <button onclick="appendCharacter('9')">9</button>
+            <button onclick="display.textContent+='/'">/</button>
+
+            <button onclick="appendCharacter('4')">4</button>
+            <button onclick="appendCharacter('5')">5</button>
+            <button onclick="appendCharacter('6')">6</button>
+            <button onclick="display.textContent+='*'">*</button>
+
+            <button onclick="appendCharacter('1')">1</button>
+            <button onclick="appendCharacter('2')">2</button>
+            <button onclick="appendCharacter('3')">3</button>
+            <button onclick="display.textContent+='-'">-</button>
+
+            <button onclick="appendCharacter('0')">0</button>
+            <button onclick="appendCharacter('00')">00</button>
+            
+            <button onclick="display.textContent+='%'">%</button>
+            <button onclick="display.textContent+='+'">+</button>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Popup Message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- show after button click -->
+  <div class="pop-box" style="display: none;" id="pop-box">
+    <div class="popup">
+      <img src="./checkmark.png" alt="ok-sign" class="img">
+      <h1>Thank You</h1>
+      <p>Your details has been successfully submitted</p>
+      <br>
+      
+      <button onClick="toggleOK()" id="ok">OK</button>
+    </div>
+  </div>
+  
+  <!-- show before button click -->
+  <div class="btn-box" id="btn-box">
+    <button onClick="toggleSubmit()" id="submit">Submit</button>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

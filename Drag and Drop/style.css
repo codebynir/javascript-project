@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100wv;
+    height: 100vh;
+    background-color: pink;
+}
+
+#left ,#right{
+    width: 300px;
+    min-height: 400px;
+    border: 5px dashed rgb(255, 8, 222);
+    margin: 20px;
+}
+
+.list{
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(216, 20, 255);
+    cursor: grab;
+    width: 280px;
+    height: 90px;
+    
+}
+.list p{
+    color: white;
+    font-size: 3rem;
+    
+}
+p span{
+    font-size: 2.1rem;
+}

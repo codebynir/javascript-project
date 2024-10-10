@@ -1,0 +1,82 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.btn-box{
+  background-color: rgb(39, 18, 66);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#submit{
+  color: rgb(39, 18, 66);
+  background-color: white;
+  padding: 15px 35px;
+  border: none;
+  outline: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .5s;
+
+}
+#submit:hover{
+  cursor: pointer;
+  border: 2px solid rgb(45, 121, 252);
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* Popup box */
+.pop-box{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(39, 18, 66);
+}
+.popup{
+  
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px 40px;
+  height: 300px;
+  gap: 25px;
+  border-radius: 10px;
+  position: relative;
+}
+.img{
+  position: absolute;
+  top: -70px;
+  width: 130px;
+  width: 130px;
+}
+
+h1{
+  color: rgb(13, 105, 217);
+}
+#ok{
+  background-color: rgb(13, 105, 217);
+  color: white;
+  width:100%;
+  padding: 15px 35px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .5s;
+}
+
+#ok:hover{
+  cursor: pointer;
+  border: 1px solid rgb(39, 18, 66);
+  background-color: rgb(255, 255, 255);
+  color: rgb(39, 18, 66);
+}

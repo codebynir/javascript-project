@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(81, 11, 147);
+}
+.main{
+  width: 220px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  gap: 10px;
+}
+button{
+  border: none;
+  outline: none;
+  background-color: white;
+  margin-left: 6px;
+  margin-right: 6px;
+  position: absolute;
+  right: 0px;
+  top: 8px;
+}
+input{
+  border: none;
+  outline: none;
+}

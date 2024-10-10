@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: whitesmoke;
+  font-size: 1.5rem;
+}
+
+.name {
+  text-align: center;
+  color: rgb(35, 35, 162);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-decoration-line: underline;
+  text-decoration-style: wavy;
+  text-decoration-color: palevioletred;
+  font-size: 50px;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dist {
+  margin-left: 20px;
+}
+.main-1 {
+  background-color: rgb(123, 213, 255);
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 100px;
+}
+input {
+  border: none;
+}
+.input-amount {
+  font-size: 2rem;
+}
+
+input::placeholder {
+  color: rgb(7, 11, 126);
+  font-size: 1.3rem;
+}
+.decor {
+  background-color: rgb(255, 255, 255);
+  width: 150px;
+  font-size: 1.2rem;
+  padding: 5px 15px;
+  border-radius: 10px;
+  color: rgb(28, 28, 144);
+  font-weight: 500;
+}
+button {
+  text-align: center;
+  margin-top: 30px;
+  border: none;
+  width: 110px;
+  font-size: 1.2rem;
+  padding: 10px 20px;
+  border-radius: 100px;
+  color: rgb(255, 255, 255);
+  font-weight: 500;
+  background-color: rgb(28, 28, 144);
+}
+.center-btn {
+  margin-left: 100px;
+}
+
+#finalAmount {
+  margin-top: 30px;
+}
+.finalValue {
+  font-size: 2rem;
+  color: rgb(7, 177, 245);
+  background-color: white;
+  padding: 10px;
+}

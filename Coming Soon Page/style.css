@@ -1,0 +1,81 @@
+
+    *{
+      box-sizing: border-box;
+      margin: 0px;
+      padding: 0px;
+
+    }
+.container{
+  background-image: url("./images/spacebg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;;
+  height: 100vh;
+  position: relative;
+  
+}
+.content{
+  
+  background-color: rgba(rgb(87, 81, 81), rgb(67, 75, 67), rgb(70, 70, 79), 0.7);
+  left: 7%;
+  top: 50%;
+  position: absolute;
+  transform: translateY(-50%);
+  color: white;
+  padding: 20px 20px;
+  height: 100px;
+  width: auto;
+}
+.content h1{
+  
+  font-size: 64px;
+  font-weight: 700;
+}
+.content h1 span{
+  text-shadow: 3px 3px 2px rgb(47, 127, 255);
+  color: rgb(211, 202, 216);
+}
+.content button{
+  background-color: transparent;
+  border: 2px solid white;
+  outline: none;
+  padding: 10px 20px;
+  color: white;
+  cursor: pointer;
+}
+.launch-time{
+
+  display: flex;
+}
+.launch-time div{
+  flex-basis: 100px;
+}
+
+.launch-time div p{
+  font-size: 60px;
+  margin-bottom: 14px;
+
+}
+.rocket{
+  width: 300px;
+  position: absolute;
+  right: 10%;
+  bottom: 0;
+  animation: rocket 4s linear infinite;
+}
+@keyframes rocket{
+  0%{
+    bottom: 0px;
+    opacity: 0;
+  }
+  
+  100%{
+    bottom: 105%;
+    opacity: 1;
+  }
+}
+.message{
+  font-size: 2rem;
+  color: yellow;
+}
